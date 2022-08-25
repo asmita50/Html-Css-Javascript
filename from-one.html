@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 3</title>
+    <style>
+      html,
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- from section  -->
+    <form action="from-one.html" method="get" autocomplete="off">
+      <fieldset>
+        <legend>Compulsary</legend>
+        <!-- from element -->
+        <label for="">Name:</label>
+        <input
+          type="text"
+          name="user-name"
+          placeholder="Enter your name"
+          size="20"
+          maxlength="10"
+          required
+        />
+        <label for="email">Email:</label>
+        <input type="email" name="user-email" placeholder="Enter your email" />
+        <br />
+        <br />
+        <!-- radio button -->
+        <span>Gender:</span><br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <br /><br />
+      </fieldset>
+
+      <!-- secound -->
+      <fieldset>
+        <legend>Optional</legend>
+        <!-- subject section -->
+        <span>Subjects:</span>
+        <input type="Checkbox" name="subject-one" value="law" id="law" />
+        <label for="law">Company Law</label>
+        <input type="Checkbox" name="subject-two" value="cyber" id="cyber" />
+        <label for="cyber">Cyber Security</label>
+        <input
+          type="checkbox"
+          name="subject-three"
+          value="computer"
+          id="computer"
+        />
+        <label for="computer">Computer</label>
+
+        <br />
+        <br />
+        <!-- textarea section -->
+        <label for="message">Message:</label><br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <br />
+
+        <!-- country selection -->
+        <label for="country">Country:</label><br />
+        <select name="country" id="country" multiple size="6">
+          <option value="nepal">Nepal</option>
+          <option value="china">China</option>
+          <option value="India">India</option>
+          <option value="australia">Australia</option>
+          <option value="Austria">Austria</option>
+          <option value="Algeria">Algeria</option>
+        </select>
+        <br />
+        <!-- color section -->
+        <label for="user-color">Color:</label><br />
+        <input type="color" id="user-color" name="user-color" /><br />
+        <!-- date section -->
+        <br />
+        <label for="user-date">Date</label>
+        <input type="date" id="user-date" name="user-date" />
+        <br />
+        <br />
+        <!-- file -->
+        <label for="user-file">File</label>
+        <input type="file" id="user-file" name="user-file" />
+        <br />
+        <br />
+        <!-- Month -->
+
+        <label for="user-month">Month</label>
+        <input type="month" id="user-month" name="user-month" />
+        <br /><br />
+
+        <!-- number -->
+        <label for="user-Number">Phone Number</label>
+        <input type="number" id="user-number" name="user-number" />
+        <br />
+        <br />
+        <!-- password -->
+        <!-- <label for="user-password"></label><br />
+        <input
+          type="password"
+          id="user-password"
+          name="user-password"
+          placeholder="password"
+        />
+        <br />
+        <br /> -->
+        <!-- detalist selection -->
+        <!-- <input list="fruits" />
+        <datalist id="fruits">
+          <option value="apple"></option>
+          <option value="orange"></option>
+          <option value="Mango"></option>
+        </datalist>
+        <br /> -->
+      </fieldset>
+      <input type="submit" value="send" disabled />
+      <input type="submit" value="send" />
+    </form>
+  </body>
+</html>
